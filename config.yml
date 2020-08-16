@@ -1,0 +1,16 @@
+title: flappy-bird
+description: a mini-game project
+template:
+  repo: flappy-bird-template
+  name: flappy-bird
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
