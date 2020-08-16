@@ -1,0 +1,136 @@
+#game{
+    width: 100%;
+    height: 600px;
+    /* background-color: green; */
+    background-image: url(../images/sky.png);
+    position: relative;
+    /* animation: mymove 10s infinite; */
+}
+/* @keyframes mymove
+{
+    from {right: 0px;}
+    to {right: 500px;}   
+} */
+.bird{
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/birds.png);
+    position: absolute;
+    left: 50%;
+    margin: -15px;
+    top: 235px;
+}
+.start{
+    height: 20px;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    font-size: 20px;
+    font-weight: bolder;
+    top: 315px;
+    line-height: 20px;
+    text-align: center;
+    transform: translateX(-50%);
+}
+.trans{
+    /* font-size: 40px; */
+    font-weight: bolder;
+    /* color: lightblue; */
+    position: absolute;
+    height: 50px;
+    left: 50%;
+    top: 295px;
+    text-align: center;
+    transform: translateX(-50%);
+    line-height: 50px;
+    /* border: 1px solid black; */
+}
+.start.start-white{
+    font-size: 24px;
+    color: #fff;
+}
+.start.start-blue{
+    font-size: 36px;
+    color: #09f;
+}
+.score{
+    position: absolute;
+    color: #fff;
+    transform: translateX(-50%);
+    left: 50%;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.mask{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    opacity: .7;
+}
+.end{
+    font-size: 13px;
+    
+    color: #09f;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.over{
+    font-size: 36px;
+    color: red;
+    font-weight: bolder;
+}
+.result{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: yellow;
+    font-weight: bold;
+}
+.final-score{
+    font-size: 20px;
+    color: yellow;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+.rank-list .list-item{
+    margin-bottom: 25px;
+    font-weight: normal;
+    text-align: center;
+    height: 14px;
+    line-height: 14px;
+}
+span{
+    display: inline-block;
+    /* margin-right: 3px; */
+}
+.list-item .rank-degree{
+    width: 14px;
+    
+    color: #fff;
+    background-color: #09f;
+}
+.list-item .rank-score{
+    width: 30px;
+    margin-right: 10px;
+    /* border: 1px solid black; */
+}
+.rank-degree.first{
+    background-color: #f54545;
+}
+.rank-degree.second{
+    background-color: #ff8547;
+}
+.rank-degree.third{
+    background-color: #ffac38;
+}
+.restart{
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
