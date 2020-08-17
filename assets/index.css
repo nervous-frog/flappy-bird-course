@@ -4,6 +4,7 @@
     /* background-color: green; */
     background-image: url(../images/sky.png);
     position: relative;
+    /* background-position-x: 0px; */
     /* animation: mymove 10s infinite; */
 }
 /* @keyframes mymove
@@ -19,6 +20,8 @@
     left: 50%;
     margin: -15px;
     top: 235px;
+    transition: top .3s linear;
+    /* overflow: visible; */
 }
 .start{
     height: 20px;
@@ -31,6 +34,8 @@
     line-height: 20px;
     text-align: center;
     transform: translateX(-50%);
+    transition: all .3s linear;
+    cursor: pointer;
 }
 .trans{
     /* font-size: 40px; */
@@ -69,6 +74,8 @@
     left: 0;
     background-color: black;
     opacity: .7;
+
+    display: none;
 }
 .end{
     font-size: 13px;
@@ -79,6 +86,8 @@
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
+
+    display: none;
 }
 .over{
     font-size: 36px;
