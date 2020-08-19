@@ -1,27 +1,18 @@
 #game{
     width: 100%;
     height: 600px;
-    /* background-color: green; */
     background-image: url(../images/sky.png);
     position: relative;
-    /* background-position-x: 0px; */
-    /* animation: mymove 10s infinite; */
 }
-/* @keyframes mymove
-{
-    from {right: 0px;}
-    to {right: 500px;}   
-} */
 .bird{
     width: 30px;
     height: 30px;
     background-image: url(../images/birds.png);
     position: absolute;
     left: 50%;
-    margin: -15px;
+    margin-left: -15px;
     top: 235px;
     transition: top .3s linear;
-    /* overflow: visible; */
 }
 .start{
     height: 20px;
@@ -37,18 +28,20 @@
     transition: all .3s linear;
     cursor: pointer;
 }
-.trans{
-    /* font-size: 40px; */
-    font-weight: bolder;
-    /* color: lightblue; */
+.pillar{
+    width: 52px;
     position: absolute;
-    height: 50px;
-    left: 50%;
-    top: 295px;
-    text-align: center;
-    transform: translateX(-50%);
-    line-height: 50px;
-    /* border: 1px solid black; */
+    vertical-align: bottom;
+    /* display: none; */
+}
+.pillar.up{
+    top: 0;
+    background-image: url(../images/pipe2.png);
+    background-position-y: bottom;
+}
+.pillar.down{
+    bottom: 0;
+    background-image: url(../images/pipe1.png);
 }
 .start.start-white{
     font-size: 24px;
@@ -65,6 +58,7 @@
     left: 50%;
     font-weight: bolder;
     font-size: 20px;
+    display: none;
 }
 .mask{
     position: absolute;
@@ -116,7 +110,6 @@
 }
 span{
     display: inline-block;
-    /* margin-right: 3px; */
 }
 .list-item .rank-degree{
     width: 14px;
@@ -127,7 +120,6 @@ span{
 .list-item .rank-score{
     width: 30px;
     margin-right: 10px;
-    /* border: 1px solid black; */
 }
 .rank-degree.first{
     background-color: #f54545;
